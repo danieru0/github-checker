@@ -1,0 +1,151 @@
+body {
+	margin: 0;
+}
+
+.container {
+	width: 1370px;
+	height: 100vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.github-input {
+	width: 100%;
+	margin-top: 10px;
+	height: 45px;
+	font-size: 28px;
+	box-sizing: border-box;
+	padding-left: 15px;
+}
+
+.github-checker {
+	width: 100%;
+	display: flex;
+	position: relative;
+}
+
+.github-info {
+	width: 25%;
+	height: 100%;
+	border-right: 1px solid black;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.github-info img {
+	width: 230px;
+	height: 230px;
+	margin-top: 20px;
+}
+
+.info-name {
+	font-size: 26px;
+	font-family: Roboto;
+	font-weight: 500;
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+
+.info-nick {
+	margin-top: 0;
+	font-size: 20px;
+	font-family: Roboto;
+}
+
+.info-location {
+	font-size: 18px;
+	margin-top: 0;
+}
+
+.info-location::before {
+	content: "\f041";
+	font-family: FontAwesome;
+	margin-right: 5px;
+}
+
+.github-repos {
+	width: 75%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: flex-start;
+}
+
+.box {
+	width: 330px;
+	height: 130px;
+	border: 1px solid #d1d5da;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+.box a {
+	text-decoration: none;
+	font-weight: 700;
+	font-family: Lato;
+	color: #0366d6;
+	position: relative;
+	top: 10px;
+	left: 20px;
+}
+
+.repos-desc {
+	margin-left: 20px;
+	font-size: 14px;
+}
+
+.circle {
+	margin-top: 20px;
+	position: relative;
+	top: 2px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: #563d7c;
+	float: left;
+	margin-left: 20px;
+}
+
+.repos-lang {
+	position: relative;
+	top: 20px;
+	text-transform: uppercase;
+	margin-left: 38px;
+}
+
+@media (max-width: 1370px) {
+	.container {
+		width: 100%;
+	}
+}
+
+@media (max-width: 918px) {
+	.github-info {
+		text-align: center;
+	}
+	.github-info img {
+		width: 128px;
+		height: 128px;
+	}
+	
+}
+
+@media (max-width: 535px) {
+	.github-checker {
+		flex-wrap: wrap;
+	}
+	.github-info {
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid black;
+	}
+	.github-repos {
+		width: 100%;
+	}
+	.github-input {
+		padding: 0;
+		text-align: center;
+	}
+}
