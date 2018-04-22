@@ -72,15 +72,16 @@ body {
 	align-content: flex-start;
 }
 
-.box {
+.repo {
 	width: 330px;
 	height: 130px;
 	border: 1px solid #d1d5da;
 	border-radius: 5px;
 	margin-top: 20px;
+	position: relative;
 }
 
-.box a {
+.repo a {
 	text-decoration: none;
 	font-weight: 700;
 	font-family: Lato;
@@ -96,23 +97,27 @@ body {
 }
 
 .circle {
-	margin-top: 20px;
-	position: relative;
-	top: 2px;
+	bottom: 27px;
+	left: 20px;
+	position: absolute;
 	width: 16px;
 	height: 16px;
 	border-radius: 50%;
 	display: inline-block;
 	background-color: #563d7c;
 	float: left;
-	margin-left: 20px;
 }
 
 .repos-lang {
-	position: relative;
-	top: 20px;
-	text-transform: uppercase;
-	margin-left: 38px;
+	position: absolute;
+	bottom: 9.7px;
+	left: 38px;
+}
+
+.languages {
+	font-size: 13px;
+	text-align: right;
+	margin-top: 30px;
 }
 
 @media (max-width: 1370px) {
